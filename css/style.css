@@ -15,6 +15,8 @@
 .navlist ul{
    display: flex;
    list-style: none;
+   flex-wrap: wrap;
+   row-gap: 8px;
 }
 .navlist ul li:first-child{
    flex: 1;
@@ -123,4 +125,72 @@
 .container .column:hover a:last-child{
    height: 100%;
    top: 0;
+}
+.fashion-hero {
+   height: 55vh;
+   padding-top: 22vh;
+}
+
+.order-wrapper {
+   width: 80%;
+   margin: 40px auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 24px;
+}
+
+.order-card {
+   border: 1px solid #e8e8e8;
+   border-radius: 10px;
+   padding: 24px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+   background-color: #ffffff;
+}
+
+.order-card h2 {
+   color: #ff8800;
+   margin-bottom: 14px;
+   font-family: serif;
+}
+
+.helper-text {
+   margin-bottom: 12px;
+   color: #333;
+   font-size: 0.92rem;
+}
+
+.order-form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.order-form label {
+   font-weight: bold;
+   font-size: 0.9rem;
+   color: #222;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+   padding: 10px;
+   border: 1px solid #d6d6d6;
+   border-radius: 6px;
+   font-size: 0.95rem;
+}
+
+.order-form button {
+   margin-top: 6px;
+   padding: 10px;
+   border: none;
+   border-radius: 6px;
+   background-color: #ff8800;
+   color: #fff;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.order-form button:hover {
+   background-color: #d77000;
 }

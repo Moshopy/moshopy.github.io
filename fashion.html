@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Suraj Kupate">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Fashion Orders</title>
+</head>
+<body>
+   <nav class="navlist">
+      <ul>
+         <li><h4>A.M.C</h4></li>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="department.html">Department</a></li>
+         <li><a href="achievement.html">Achievement</a></li>
+         <li><a href="fashion.html">Fashion Orders</a></li>
+      </ul>
+   </nav>
+
+   <div class="main-box fashion-hero">
+      <h1>Order Your Fashion Style</h1>
+      <p>Choose your preferred style, share your measurements, and receive a custom price from the business owner.</p>
+   </div>
+
+   <section class="order-wrapper">
+      <div class="order-card">
+         <h2>Client Order Request</h2>
+         <form class="order-form" action="#" method="post">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Enter your full name" required>
+
+            <label for="style-type">Style Type</label>
+            <select id="style-type" name="style-type" required>
+               <option value="">Select your style</option>
+               <option value="native">Native Wear</option>
+               <option value="corporate">Corporate Wear</option>
+               <option value="bridal">Bridal Wear</option>
+               <option value="casual">Casual Outfit</option>
+               <option value="custom">Custom Design</option>
+            </select>
+
+            <label for="style-note">Style Details</label>
+            <textarea id="style-note" name="style-note" rows="4" placeholder="Describe your preferred design, colors, and fabric choices." required></textarea>
+
+            <label for="measurement">Body Measurements</label>
+            <textarea id="measurement" name="measurement" rows="4" placeholder="Example: Chest 40, Waist 34, Hip 42, Shoulder 18, Sleeve 24" required></textarea>
+
+            <label for="delivery-date">Preferred Delivery Date</label>
+            <input id="delivery-date" name="delivery-date" type="date" required>
+
+            <label for="contact">Phone / Email</label>
+            <input id="contact" name="contact" type="text" placeholder="Enter your active phone number or email" required>
+
+            <button type="submit">Send Order Request</button>
+         </form>
+      </div>
+
+      <div class="order-card">
+         <h2>Owner/Accountant Reply Section</h2>
+         <p class="helper-text">After reviewing the request, the business owner or accountant can reply with price and payment details.</p>
+         <form class="order-form" action="#" method="post">
+            <label for="order-id">Order ID / Client Name</label>
+            <input id="order-id" name="order-id" type="text" placeholder="Reference order or client name" required>
+
+            <label for="quoted-price">Quoted Price</label>
+            <input id="quoted-price" name="quoted-price" type="text" placeholder="e.g. ₦85,000" required>
+
+            <label for="production-time">Production Timeline</label>
+            <input id="production-time" name="production-time" type="text" placeholder="e.g. 7 working days" required>
+
+            <label for="owner-note">Reply Message</label>
+            <textarea id="owner-note" name="owner-note" rows="5" placeholder="Add extra details about fabric availability, fitting date, and payment instructions." required></textarea>
+
+            <button type="submit">Send Price Reply</button>
+         </form>
+      </div>
+   </section>
+</body>
+</html>
